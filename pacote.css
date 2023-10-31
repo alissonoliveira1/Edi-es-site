@@ -1,0 +1,592 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+   
+  }
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(65, 64, 66);
+    background-color: white;
+  }
+
+
+
+.img-salvador{
+  background-image: url(imagens/Banner/salvador.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.pai-pacote{
+
+
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 35%;
+    
+    top: 25vh;
+    left: 2.5%;
+    border-radius: 8px;
+}
+.pacote{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight:bold;
+    padding: 3%;
+}
+.pai-input{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputtext input{
+   
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+    width: 13vw;
+    height: 8vh;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.bnt-buscar{
+  display: flex;
+  justify-content: center;
+}
+.bnt-buscar button{
+
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 15vw;
+    height: 9vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight:bold;
+    background-color: rgb(255, 136, 0);
+}
+input[type=date]{
+    font-family: 'Montserrat', sans-serif;
+    width: 13vw;
+    padding: 15px;
+    font-size: 15px;
+    height: 8vh;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+::-webkit-calendar-picker-indicator{
+    
+    cursor: pointer;
+    font-size: 20px;
+}
+label{
+    display: flex;
+    top: 45%;
+    padding-left: 3px;
+    font-size: 14px;
+}
+.flex{
+  display: flex;
+}
+
+
+
+
+
+
+
+@media (max-width:480px) {
+  .flex{
+    display: grid;
+    gap: 5px;
+    grid-template-columns:  auto auto;
+
+  }
+  .img-salvador{
+height: 100vh;
+ 
+  }
+  .pai-pacote{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 95%;
+    height: 80%;
+    border-radius: 8px; 
+
+
+}
+.pai-input{
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputtext input{
+   
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-size: 15px;
+  outline: none;
+  width: 70vw;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+input[type=date]{
+  font-family: 'Montserrat', sans-serif;
+  width: 11rem;
+  padding: 15px;
+  font-size: 15px;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.bnt-buscar button{
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  width: 40vw;
+  height: 9vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight:bold;
+  background-color: rgb(255, 136, 0);
+}
+}
+@media (min-width:481px) and (max-width:767px) {
+  .flex{
+    display: grid;
+    gap: 5px;
+    grid-template-columns:  auto auto;
+
+  }
+  .img-salvador{
+height: 100vh;
+ 
+  }
+  .pai-pacote{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 95%;
+    height: 80%;
+    border-radius: 8px; 
+
+
+}
+.pai-input{
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputtext input{
+   
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-size: 15px;
+  outline: none;
+  width: 70vw;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+input[type=date]{
+  font-family: 'Montserrat', sans-serif;
+  width: 11rem;
+  padding: 15px;
+  font-size: 15px;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.bnt-buscar button{
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  width: 40vw;
+  height: 9vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight:bold;
+  background-color: rgb(255, 136, 0);
+}
+}
+@media (min-width:768px) and (max-width:991px) {
+  .flex{
+    display: grid;
+    gap: 5px;
+    grid-template-columns:  auto auto;
+
+  }
+  .img-salvador{
+height: 100vh;
+ 
+  }
+  .pai-pacote{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 95%;
+    height: 80%;
+    border-radius: 8px; 
+
+
+}
+.pai-input{
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputtext input{
+   
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-size: 15px;
+  outline: none;
+  width: 70vw;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+input[type=date]{
+  font-family: 'Montserrat', sans-serif;
+  width: 11rem;
+  padding: 15px;
+  font-size: 15px;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.bnt-buscar button{
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  width: 40vw;
+  height: 9vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight:bold;
+  background-color: rgb(255, 136, 0);
+}
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .textflex{
+    display: flex;
+    gap: 10px;
+  }
+  .img-salvador{
+    background-image: url(imagens/Banner/salvador.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+  }
+  .pai-pacote{
+      background-color: rgb(255, 255, 255);
+      width: 95%;
+      height: 80%;
+      top: 25vh;
+      left: 2.5%;
+      border-radius: 8px;
+  }
+  .pacote{
+      
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      font-weight:bold;
+      padding: 3%;
+  }
+  .pai-input{
+      display: flex;
+      grid-auto-columns: auto auto;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-around;
+  }
+  .inputtext input{
+     
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px;
+      font-size: 15px;
+      outline: none;
+      width: 30vw;
+      height: 8vh;
+      border: 1px solid black;
+      border-radius: 8px;
+  }
+  .bnt-buscar{
+    display: block;
+    justify-content: center;
+  }
+  .bnt-buscar button{
+      margin-top: 15px;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      width: 15vw;
+      height: 9vh;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight:bold;
+      background-color: rgb(255, 136, 0);
+  }
+  input[type=date]{
+      font-family: 'Montserrat', sans-serif;
+      width: 20vw;
+      padding: 15px;
+      font-size: 15px;
+      height: 8vh;
+      border: 1px solid black;
+      border-radius: 8px;
+  }
+  ::-webkit-calendar-picker-indicator{
+      
+      cursor: pointer;
+      font-size: 20px;
+  }
+  label{
+      display: flex;
+      top: 45%;
+      padding-left: 3px;
+      font-size: 14px;
+  }
+  .flex{
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  .bntflex{
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width:1200px) and (max-width:1919px) {
+  .textflex{
+    display: flex;
+    gap: 10px;
+  }
+  .img-salvador{
+    background-image: url(imagens/Banner/salvador.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+  }
+  .pai-pacote{
+      background-color: rgb(255, 255, 255);
+      width: 95%;
+      height: 50%;
+      top: 25vh;
+      left: 2.5%;
+      border-radius: 8px;
+  }
+  .pacote{
+      
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      font-weight:bold;
+      padding: 3%;
+  }
+  .pai-input{
+      display: flex;
+      padding: 0px;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+  }
+  .inputtext input{
+     
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px;
+      font-size: 15px;
+      outline: none;
+      width: 15vw;
+      height: 8vh;
+      border: 1px solid black;
+      border-radius: 8px;
+  }
+  .bnt-buscar{
+    display: block;
+    justify-content: center;
+  }
+  .bnt-buscar button{
+      margin-top: 15px;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      width: 13vw;
+      height: 9vh;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight:bold;
+      background-color: rgb(255, 136, 0);
+  }
+  input[type=date]{
+      font-family: 'Montserrat', sans-serif;
+      width:12vw;
+      padding: 15px;
+      font-size: 15px;
+      height: 8vh;
+      border: 1px solid black;
+      border-radius: 8px;
+  }
+  ::-webkit-calendar-picker-indicator{
+      
+      cursor: pointer;
+      font-size: 20px;
+  }
+  label{
+      display: flex;
+      top: 45%;
+      padding-left: 0px;
+      font-size: 14px;
+  }
+  .flex{
+    padding-top: 0px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  .bntflex{
+   
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:1920px) {
+  .textflex{
+    display: flex;
+    gap: 10px;
+  }
+  .img-salvador{
+    background-image: url(imagens/Banner/salvador.jpg) ;
+    background-position: center;
+    background-repeat: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 80vh;
+      overflow: auto;
+  }
+  .pai-pacote{
+      background-color: rgb(255, 255, 255);
+      width: 95%;
+      height: 50%;
+      top: 25vh;
+      left: 2.5%;
+      border-radius: 8px;
+  }
+  .pacote{
+      
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      font-weight:bold;
+      padding: 3%;
+  }
+  .pai-input{
+      display: flex;
+      padding: 0px;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+  }
+  .inputtext input{
+     
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px;
+      font-size: 15px;
+      outline: none;
+      width: 15vw;
+      height: 8vh;
+      border: 1px solid black;
+      border-radius: 8px;
+  }
+  .bnt-buscar{
+    display: block;
+    justify-content: center;
+  }
+  .bnt-buscar button{
+      margin-top: 15px;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      width: 13vw;
+      height: 9vh;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight:bold;
+      background-color: rgb(255, 136, 0);
+  }
+  input[type=date]{
+      font-family: 'Montserrat', sans-serif;
+      width:12vw;
+      padding: 15px;
+      font-size: 15px;
+      height: 8vh;
+      border: 1px solid black;
+      border-radius: 8px;
+  }
+  ::-webkit-calendar-picker-indicator{
+      
+      cursor: pointer;
+      font-size: 20px;
+  }
+  label{
+      display: flex;
+      top: 45%;
+      padding-left: 0px;
+      font-size: 14px;
+  }
+  .flex{
+    padding-top: 0px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  .bntflex{
+   
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
